@@ -1,0 +1,245 @@
+.arse {
+	padding: 20px 0;
+	background-color: #fff;
+	min-height: 40px;
+}
+
+.arse h2 {
+	font-size: 24px;
+	font-weight: 300;
+	margin: 0;
+}
+
+@media (max-width: 992px) {
+	.breadcrumbs h2 {
+		margin: 0 0 10px 0;
+	}
+}
+
+.arse ol {
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	padding: 0;
+	margin-top: -60;
+	font-size: 14px;
+}
+
+.arse ol:hover {
+	color: #ffd200;
+	text-decoration: solid;
+}
+
+.arse ol li + li {
+	padding-left: 10px;
+}
+
+.arse ol li + li::before {
+	display: inline-block;
+	padding-right: 10px;
+	color: #ffd200;
+	content: "/";
+}
+section {
+	padding: 60px 0;
+	overflow: hidden;
+}
+
+.section-bg {
+	background-color: #fff;
+}
+
+.section-titl {
+	text-align: left;
+    margin-left: 84px;
+	padding-bottom: 30px;
+}
+
+.section-titl h2 {
+	font-size: 24px;
+	font-weight: 600;
+	margin-top: 25px;
+	padding-bottom: 15px;
+	position: relative;
+	text-transform: uppercase;
+	color: #000;
+}
+
+.section-titl h2::after {
+	content: "";
+	position: absolute;
+	display: block;
+	width: 89px;
+	height: 1.5px;
+	background: #ffc107;
+	bottom: 12px;
+	left: calc(3% - 31px);
+}
+
+@media (min-width: 1024px) {
+	.section-title p {
+		width: 50%;
+	}
+}
+
+.container {
+	max-width: 1170px;
+	margin: auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+  }
+  img{
+	max-width: 100%;
+	vertical-align: middle;
+  }
+  .artsemua .row h2{
+	display: flex;
+	margin-left: 30px;
+	margin-top: 30px;
+	font-size: 15px;
+  }
+  /*.gallery*/
+  .gallery{
+	width: 100%;
+	display: block;
+	min-height: 100vh;
+	padding: 100px 0;
+  }
+  .gallery .gallery-filter{
+	padding: 0 15px;
+	width: 53%;
+	margin-top: -36px;
+	text-align: center;
+	margin-bottom: 40px;
+  }
+  .gallery .gallery-filter .filter-item{
+	color: #000000;
+	font-size: 12px;
+	border: 2px solid rgb(0, 0, 0);
+	text-transform: uppercase;
+	display: inline-block;
+	border-radius: 5px;
+	margin-right: 8px;
+	cursor: pointer;
+	padding: 5px;
+	line-height: 1.2;
+	transition: all 0.3s ease;
+  }
+  .gallery .gallery-filter .filter-item.active{
+	color: rgb(255, 255, 255);
+	border-color : #fff15a;
+	background: #000;
+  }
+  .gallery .gallery-item{
+	width: calc(100% / 3);
+	padding: 15px;
+  
+  }
+  .gallery .gallery-item-inner img{
+	width: 100%;
+	border: 3px solid #d4dad9;
+  }
+  .gallery .gallery-item.show{
+	animation: fadeIn 0.5s ease;
+  }
+  @keyframes fadeIn{
+	0%{
+	  opacity: 0;
+	}
+	100%{
+	  opacity: 1;
+	}
+  }
+  .gallery .gallery-item.hide{
+	display: none;
+  }
+  
+  /*responsive*/
+  @media(max-width: 491px){
+	.gallery .gallery-item{
+	  width: 50%;
+	}
+  }
+  @media(max-width: 467px){
+	  .gallery .gallery-item{
+	  width: 100%;
+	}
+	.gallery .gallery-filter .filter-item{
+	  margin-bottom: 10px;
+	}
+  }
+
+.gallery-item .art h3{
+	position: relative;
+	display: inline-block;
+	font-weight: bold;
+	padding: 6px 10px;
+	background-color: rgb(0, 0, 0);
+	color: #fff;
+	font-size: 10px;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	transition: .5s;
+	margin-top: 10px;
+	margin-left: 10px;
+	letter-spacing: 1px;
+	border-radius: 50px;
+  }
+  .gallery-item .art h6{
+	font-size: 10px;
+	display: flex;
+	margin-left: 120px;
+	margin-top: -30px;
+  }
+  .gallery-item .art h4{
+	font-size: 16px;
+	display: flex;
+	font-weight: 700;
+	margin-left: 10px;
+  }
+  .gallery-item .art p{
+	font-size: 13px;
+	display: flex;
+	margin-left: 10px;
+	font-weight: normal;
+	margin-bottom: 10px;
+}
+
+form.example input[type=text] {
+	padding: 5px;
+	font-size: 17px;
+	border: 1px solid grey;
+	float: left;
+	width: 80%;
+	margin-top: 20px;
+	background: #f1f1f1;
+	margin-left: -138px;
+	border-radius: 5px 0px 0px 5px;
+  }
+  
+  form.example button {
+	float: left;
+	width: 20%;
+	padding: 5px;
+	background: #f1f1f1;
+	color: rgb(0, 0, 0);
+	font-size: 17px;
+	border: 1px solid grey;
+	border-radius: 0px 5px 5px 0px;
+	border-left: none;
+	cursor: pointer;
+	margin-top: 20px;
+  }
+  
+  form.example button:hover {
+	background: #0b7dda;
+  }
+  
+  form.example::after {
+	content: "";
+	clear: both;
+	display: table;
+  }

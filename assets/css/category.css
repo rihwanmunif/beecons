@@ -1,0 +1,79 @@
+/*Kategori Course*/
+.row {
+	margin: 0px -14px;
+	padding: 8px;
+}
+
+.row > .column {
+	padding: 6px;
+}
+
+.column {
+	float: left;
+	width: 25%;
+	display: none;
+}
+
+/* Content decoration */
+.content {
+	background-color: white;
+	padding: 10px;
+	border: 1px solid gray;
+}
+
+/* Paragraph decoration */
+p {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 4;
+	overflow: hidden;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.content {
+	background-color: white;
+	padding: 10px;
+	border: 1px solid gray;
+}
+
+.show {
+	display: block;
+}
+
+/* Style the filter buttons */
+.bttn {
+	border: 1px solid;
+	padding: 8px 14px;
+	background-color: #fff;
+	border-radius: 5px;
+}
+
+.bttn.active {
+	background-color: #1f1f1f;
+	color: white;
+}
+
+.bttn:hover {
+	background-color: #000;
+	color: #fff;
+	opacity: 0.8;
+}
+
+/* Window size 850 width set */
+@media screen and (max-width: 850px) {
+	.column {
+		width: 50%;
+	}
+}
+
+/* Window size 400 width set */
+@media screen and (max-width: 400px) {
+	.column {
+		width: 100%;
+	}
+}

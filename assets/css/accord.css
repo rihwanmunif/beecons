@@ -1,0 +1,82 @@
+/* materi */
+#materi .instruktur div {
+	margin: unset;
+	margin-left: 1rem;
+	align-items: center;
+}
+#materi .instruktur div p:first-child {
+	font-size: 10pt;
+	color: var(--primary);
+	letter-spacing: 1px;
+}
+#materi .instruktur div p:last-child {
+	font-size: 10pt;
+	color: #000;
+	letter-spacing: 1px;
+}
+.accordion * {
+	box-shadow: unset;
+	border-radius: unset;
+	border: unset;
+	font-size: 11pt;
+	letter-spacing: 1px;
+	color: #000;
+}
+.accordion-button:not(.collapsed) {
+	background-color: #fff;
+	color: var(--primary);
+}
+.accordion-button.collapsed::after {
+	background-image: unset;
+
+	content: "\2b";
+	transition: 0.1s;
+}
+.accordion-button::after {
+	background-image: unset;
+
+	content: "\f068";
+	transition: 0.1s;
+}
+.accordion-item {
+	border-bottom: 2px solid #ddd;
+	font-size: 10pt;
+	letter-spacing: 1px;
+}
+.accordion-body .nav-link {
+	padding-top: unset;
+	padding-left: 2.4rem;
+	margin-top: unset;
+	font-size: 10pt;
+	cursor: pointer;
+}
+.nav-pills .nav-link {
+	font-size: 11pt;
+	font-weight: bold;
+	letter-spacing: 1px;
+	padding: unset;
+	margin-left: 1rem;
+	margin-right: 1rem;
+	color: #9b9b9b;
+}
+.nav-pills .nav-link:first-child {
+	margin-left: unset;
+}
+.nav-pills .nav-link.active {
+	background-color: unset;
+	color: #000;
+	border-radius: unset;
+	border-bottom: 3px solid var(--hijau-muda);
+}
+.tab-pane p {
+	font-size: 10pt;
+	color: #000;
+	letter-spacing: 1px;
+	text-indent: 50px;
+	text-align: justify;
+	margin: 1rem;
+	margin-left: unset;
+}
+.tab-pane p:first-child {
+	margin-top: 2rem;
+}
