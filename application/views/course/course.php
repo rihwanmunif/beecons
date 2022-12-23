@@ -174,7 +174,7 @@
                   <a href="course/details_course/<?= $item->course_id ?>">
                     <h6 class="mb-3" style="font-size:16px; height:100%; margin: 0px 0px 8px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"><b><?= $item->title ?></b></h6>
                   </a>
-                  <button type="button" class="btn btn-info mb-4" style="border-radius: 5px; font-weight:bold; width:80%;"><a href="<?php echo base_url() . 'signin' ?>"><b>Buy</b></a></button>
+                  <button type="button" class="btn btn-info mb-4" style="border-radius: 5px; font-weight:bold; width:80%;"><a href="<?php echo base_url() . 'signin'?>"><b>Buy</b></a></button>
                   <button type="button" class="btn btn-outline-info mb-4" style="border-radius: 5px; font-weight:bold;"><a href="<?php echo base_url() . 'signin' ?>"><i class="bi bi-cart-plus-fill"></i></a></button>
                 </div>
               </div>
